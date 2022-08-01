@@ -85,6 +85,10 @@ header {
   color: var(--light--rose) !important;
 }
 
+.make-footer {
+  color: var(--dark--purple--blue) !important;
+}
+
 .sign-in {
   margin-right: 25px;
 }

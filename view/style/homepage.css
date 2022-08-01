@@ -3,10 +3,25 @@
 .slideshow-container {
   width: 100%;
   margin: auto;
+  height: 100vh;
   max-width: 2000px;
   max-height: 100vh;
   position: relative;
   top: 68px;
+}
+
+.slideshow-invite {
+  width: 100%;
+  display: flex;
+  margin: 30px auto;
+  max-width: 2000px;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slideshow-invite img {
+  height: 320px;
 }
 
 .slides {
@@ -55,6 +70,12 @@
   box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.25);
 }
 
+.filter:hover {
+  opacity: 0.8;
+  margin-top: -2px;
+  transition: 0.2s ease-in-out;
+}
+
 .filter a {
   color: var(--white);
   text-decoration: none;
@@ -94,4 +115,48 @@
   color: var(--purple);
   font-weight: 700;
   font-size: 18px;
+}
+
+.links-footer {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  color: var(--dark--purple-gray);
+  padding-bottom: 25px;
+}
+
+.links-footer a:hover {
+  text-decoration: underline;
+}
+
+.about-courses {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.about-courses h3 {
+  font-size: 25px;
+  text-align: center;
+  color: var(--text--black);
+}
+
+.user-buyer {
+  width: 30%;
+}
+
+.user-teacher {
+  width: 30%;
+}
+
+.card-info {
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--rose);
+  width: 100%;
 }
