@@ -1,0 +1,97 @@
+@import url("./colors.css");
+
+.slideshow-container {
+  width: 100%;
+  margin: auto;
+  max-width: 2000px;
+  max-height: 100vh;
+  position: relative;
+  top: 68px;
+}
+
+.slides {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.slides h1 {
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+  color: var(--rose);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.filter-container {
+  display: flex;
+  margin: 25px 0;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.filter {
+  border-radius: 15px;
+  padding: 10px 30px;
+  background: var(--medium--rose);
+  box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.25);
+}
+
+.filter a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.invite-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.invite-container h1 {
+  color: var(--dark--purple--blue);
+}
+
+.invite-container button {
+  margin-top: 10px;
+}
+
+.footer-container {
+  display: flex;
+  margin: 50px auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  border-top: 1px solid var(--light--purple--gray);
+  border-top-style: dashed;
+}
+
+.info-footer ul {
+  list-style: none;
+}
+
+.info-footer p {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 18px;
+}
