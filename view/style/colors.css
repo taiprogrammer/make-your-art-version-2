@@ -10,4 +10,6 @@
   --dark--purple-gray: #474f59;
   --dark--purple--blue: #1a2226;
   --light--purple--gray: #909090;
+  --card--background: rgba(220, 220, 220, 0.7);
+  --box--shaddow: 0px 4px 4px -3px rgba(0, 0, 0, 0.25);
 }
