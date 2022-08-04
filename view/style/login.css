@@ -1,0 +1,90 @@
+@import url("./colors.css");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  overflow: hidden;
+}
+
+main {
+  margin-top: 68px;
+}
+
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-images {
+  display: flex;
+  height: 100vh;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--dark--purple--blue);
+}
+
+.container-images img {
+  height: 200px;
+  border-radius: 10px;
+  border: 1.5px solid var(--white);
+}
+
+.container-images h3 {
+  color: var(--light--rose);
+}
+
+.side-form {
+  margin: 0 auto;
+  padding: 80px;
+}
+
+.side-form section {
+  width: 95%;
+  display: flex;
+  margin: 0 auto;
+  padding: 60px 30px;
+  border-radius: 5px;
+  flex-direction: column;
+  box-shadow: var(--box--shaddow);
+  background: var(--card--background);
+}
+
+.side-form form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.ipt-email {
+  width: 300px;
+}
+
+.ipt-password {
+  width: 300px;
+  margin-top: 15px;
+}
+
+.side-form span {
+  margin-top: 15px;
+}
+
+.side-form span a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.side-form span a:hover {
+  text-decoration: underline;
+}
+
+.side-form button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.create-account-invite span {
+  color: var(--dark--purple--blue);
+}
