@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.container-login {
+.container-sign-up {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,7 +38,7 @@
 }
 
 .side-form section {
-  width: 100%;
+  width: 500px;
   display: flex;
   padding: 60px 20px;
   border-radius: 5px;
@@ -47,38 +47,37 @@
   background: var(--card--background);
 }
 
-.side-form section h2 {
+.side-form section h2,
+.side-form section h4 {
   color: var(--dark--purple-gray);
 }
 
-.side-form form {
+.side-form div {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.ipt-password {
-  margin-top: 15px;
+.ipt {
+  margin-top: 15px !important;
 }
 
-.side-form span {
-  margin-top: 15px;
+.btn {
+  margin-top: 15px !important;
 }
 
-.side-form span a {
-  color: var(--purple);
-  text-decoration: none;
+.logo {
+  color: var(--medium--rose);
 }
 
-.side-form span a:hover {
-  text-decoration: underline;
+.make {
+  color: var(--dark--purple--blue) !important;
 }
 
-.side-form button {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.create-account-invite span {
-  color: var(--dark--purple--blue);
+#address .container-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
 }

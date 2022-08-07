@@ -75,6 +75,7 @@ body {
 }
 
 .ipt {
+  width: 93%;
   padding: 10px;
   outline: none;
   border-radius: 4px;
@@ -101,6 +102,11 @@ header {
   justify-content: space-between;
 }
 
+.container-menu a {
+  text-decoration: none;
+  color: var(--medium--rose);
+}
+
 .logo span {
   font-size: 24px;
   font-weight: 700;
@@ -108,7 +114,7 @@ header {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.make {
+.container-menu a .make {
   color: var(--light--rose) !important;
 }
 

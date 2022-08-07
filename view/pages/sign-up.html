@@ -6,21 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make Your Art</title>
     <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/sign-up.css" />
     <link rel="stylesheet" href="../style/normalize.css" />
   </head>
   <body>
     <header>
       <div class="container-menu">
-        <div class="logo">
-          <span class="make">Make</span>
-          <span>Your Art</span>
-        </div>
+        <a href="./index.html">
+          <div class="logo">
+            <span class="make">Make</span>
+            <span>Your Art</span>
+          </div>
+        </a>
         <div class="join-us">
-          <button class="btn btn-primary-full-filled sign-in">Sign In</button>
+          <button class="btn btn-primary-full-filled sign-in">Login</button>
           <button class="btn btn-tertiary-full-filled">Sign Up</button>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container-sign-up">
+        <div class="side-img">
+          <div class="container-images">
+            <img src="../assets/img/art-two-login.jpg" alt="Image Sign Up" />
+            <h3>Art Made with Illustrator</h3>
+          </div>
+        </div>
+        <div class="side-form">
+          <section id="personal-information" style="display: block">
+            <h2>
+              Welcome to
+              <span class="make">Make</span>
+              <span class="logo">Your Art</span>
+            </h2>
+            <h4>Tell us a little about you</h4>
+            <div>
+              <input type="text" class="ipt" placeholder="Name" />
+              <input type="text" class="ipt" placeholder="Age" />
+              <input type="text" class="ipt" placeholder="Occupation" />
+              <input type="email" class="ipt" placeholder="Email" />
+              <input type="password" class="ipt" placeholder="Password" />
+              <button
+                class="btn btn-secondary-full-filled"
+                onclick="openAddressSection()"
+              >
+                Next
+                <span style="margin-left: 5px">&#10095;</span>
+              </button>
+            </div>
+          </section>
+          <section id="address" style="display: none">
+            <h2>
+              Welcome to
+              <span class="make">Make</span>
+              <span class="logo">Your Art</span>
+            </h2>
+            <h4>Tell us where are you from</h4>
+            <div>
+              <input type="text" class="ipt" placeholder="Zip Code" />
+              <input type="text" class="ipt" placeholder="City" />
+              <input type="text" class="ipt" placeholder="State" />
+              <input type="text" class="ipt" placeholder="Country" />
+              <div class="container-buttons">
+                <button
+                  class="btn btn-tertiary-full-filled"
+                  onclick="backToPersonalInformation()"
+                >
+                  <span style="margin-right: 5px">&#10094;</span>
+                  Back
+                </button>
+                <button class="btn btn-secondary-full-filled">Next</button>
+              </div>
+            </div>
+          </section>
+          <section id="profile-type" style="display: none">
+            <h2>
+              Welcome to
+              <span class="make">Make</span>
+              <span class="logo">Your Art</span>
+            </h2>
+            <h4>Tell us where are you from</h4>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="../js/sign-up/signUpForm.js"></script>
   </body>
 </html>
