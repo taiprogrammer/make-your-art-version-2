@@ -40,7 +40,7 @@
 .side-form section {
   display: flex;
   margin-top: 25px;
-  padding: 60px 20px;
+  padding: 40px 20px;
   border-radius: 5px;
   flex-direction: column;
   box-shadow: var(--box--shaddow);
@@ -62,7 +62,7 @@
   margin-top: 15px !important;
 }
 
-.btn {
+.btn-margin {
   margin-top: 15px !important;
 }
 
@@ -74,10 +74,34 @@
   color: var(--dark--purple--blue) !important;
 }
 
-#address .container-buttons {
+#address .container-buttons,
+#profile-type .container-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 98%;
+}
+
+div.type-profile {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.choice {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.choice label {
+  margin-left: 10px;
+  color: var(--dark--purple--blue);
+}
+
+div.choice input {
+  accent-color: var(--purple);
 }

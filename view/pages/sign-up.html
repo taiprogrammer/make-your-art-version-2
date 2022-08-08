@@ -19,8 +19,12 @@
           </div>
         </a>
         <div class="join-us">
-          <button class="btn btn-primary-full-filled sign-in">Login</button>
-          <button class="btn btn-tertiary-full-filled">Sign Up</button>
+          <button class="btn btn-primary-full-filled sign-in">
+            <a href="./login.html">Login</a>
+          </button>
+          <button class="btn btn-tertiary-full-filled">
+            <a href="./sign-up.html">Sign Up</a>
+          </button>
         </div>
       </div>
     </header>
@@ -47,7 +51,7 @@
               <input type="email" class="ipt" placeholder="Email" />
               <input type="password" class="ipt" placeholder="Password" />
               <button
-                class="btn btn-secondary-full-filled"
+                class="btn btn-secondary-full-filled btn-margin"
                 onclick="openAddressSection()"
               >
                 Next
@@ -69,13 +73,16 @@
               <input type="text" class="ipt" placeholder="Country" />
               <div class="container-buttons">
                 <button
-                  class="btn btn-tertiary-full-filled"
+                  class="btn btn-tertiary-full-filled btn-margin"
                   onclick="backToPersonalInformation()"
                 >
                   <span style="margin-right: 5px">&#10094;</span>
                   Back
                 </button>
-                <button class="btn btn-secondary-full-filled">
+                <button
+                  class="btn btn-secondary-full-filled btn-margin"
+                  onclick="openTypeProfile()"
+                >
                   Next <span style="margin-left: 5px">&#10095;</span>
                 </button>
               </div>
@@ -87,7 +94,27 @@
               <span class="make">Make</span>
               <span class="logo">Your Art</span>
             </h2>
-            <h4>Tell us where are you from</h4>
+            <h4>Tell what kind of user you want to be</h4>
+            <div class="type-profile">
+              <div class="choice">
+                <input type="radio" name="teacher" id="teacher" />
+                <label for="teacher">Teacher</label>
+              </div>
+              <div class="choice">
+                <input type="radio" name="student" id="student" />
+                <label for="student">Student</label>
+              </div>
+            </div>
+            <div class="container-buttons">
+              <button
+                class="btn btn-tertiary-full-filled btn-margin"
+                onclick="backToAddressSection()"
+              >
+                <span style="margin-right: 5px">&#10094;</span>
+                Back
+              </button>
+              <button class="btn btn-secondary-full-filled">Finish</button>
+            </div>
           </section>
         </div>
       </div>
