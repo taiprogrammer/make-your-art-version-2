@@ -6,6 +6,10 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   border: none;
   cursor: pointer;
@@ -102,7 +106,7 @@ header {
   justify-content: space-between;
 }
 
-.container-menu a {
+.container-menu a.home-link {
   text-decoration: none;
   color: var(--medium--rose);
 }

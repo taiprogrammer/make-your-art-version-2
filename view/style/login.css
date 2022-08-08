@@ -33,12 +33,11 @@
 }
 
 .side-form {
+  width: 40%;
   margin: 0 auto;
-  padding: 100px 500px;
 }
 
 .side-form section {
-  width: 100%;
   display: flex;
   padding: 60px 20px;
   border-radius: 5px;
@@ -53,8 +52,8 @@
 
 .side-form form {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .ipt-password {

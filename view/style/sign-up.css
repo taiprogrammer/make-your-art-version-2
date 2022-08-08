@@ -33,13 +33,13 @@
 }
 
 .side-form {
+  width: 40%;
   margin: 0 auto;
-  padding: 100px 500px;
 }
 
 .side-form section {
-  width: 500px;
   display: flex;
+  margin-top: 25px;
   padding: 60px 20px;
   border-radius: 5px;
   flex-direction: column;
