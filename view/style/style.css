@@ -150,3 +150,35 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.footer-container {
+  display: flex;
+  margin: 50px auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  border-top: 1px solid var(--light--purple--gray);
+  border-top-style: dashed;
+}
+
+.info-footer ul {
+  list-style: none;
+}
+
+.info-footer p {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.links-footer {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  color: var(--dark--purple-gray);
+}
+
+.links-footer a:hover {
+  text-decoration: underline;
+}
