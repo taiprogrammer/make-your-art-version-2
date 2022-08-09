@@ -19,13 +19,13 @@ a {
 
 .btn-primary-full-filled {
   background: var(--light--rose);
-  color: var(--dark--purple-gray);
+  color: var(--dark--purple--gray);
   font-family: "Lato", sans-serif;
 }
 
 .btn-primary-full-filled a {
   text-decoration: none;
-  color: var(--dark--purple-gray);
+  color: var(--dark--purple--gray);
 }
 
 .btn-primary-full-filled:hover {
@@ -38,7 +38,7 @@ a {
 
 .btn-secondary-full-filled {
   color: var(--white);
-  background: var(--dark--purple-gray);
+  background: var(--dark--purple--gray);
   font-family: "Lato", sans-serif;
 }
 
@@ -49,12 +49,12 @@ a {
 
 .btn-secondary-full-filled:hover {
   background: var(--white);
-  color: var(--dark--purple-gray);
+  color: var(--dark--purple--gray);
 }
 
 .btn-secondary-full-filled:disabled {
   color: var(--light--purple--gray);
-  background: var(--dark--purple-gray);
+  background: var(--dark--purple--gray);
 }
 
 .btn-tertiary-full-filled {
@@ -152,14 +152,14 @@ header {
 }
 
 .footer-container {
+  width: 95%;
   display: flex;
   margin: 50px auto;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  width: 95%;
-  border-top: 1px solid var(--light--purple--gray);
   border-top-style: dashed;
+  justify-content: space-around;
+  border-top: 1px solid var(--light--purple--gray);
 }
 
 .info-footer ul {
@@ -167,16 +167,16 @@ header {
 }
 
 .info-footer p {
-  color: var(--purple);
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
+  color: var(--purple);
 }
 
 .links-footer {
   display: flex;
   cursor: pointer;
   flex-direction: column;
-  color: var(--dark--purple-gray);
+  color: var(--dark--purple--gray);
 }
 
 .links-footer a:hover {

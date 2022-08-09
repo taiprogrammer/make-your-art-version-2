@@ -1,13 +1,13 @@
 @import url("./colors.css");
 
 .slideshow-container {
+  top: 68px;
   width: 100%;
   margin: auto;
   height: 100vh;
   max-width: 2000px;
   max-height: 100vh;
   position: relative;
-  top: 68px;
 }
 
 .slideshow-invite {
@@ -64,8 +64,8 @@
 }
 
 .filter {
-  border-radius: 15px;
   padding: 10px 30px;
+  border-radius: 15px;
   background: var(--medium--rose);
   box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.25);
 }
@@ -97,14 +97,14 @@
 }
 
 .footer-container {
+  width: 95%;
   display: flex;
   margin: 50px auto;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  width: 95%;
-  border-top: 1px solid var(--light--purple--gray);
+  flex-direction: row;
   border-top-style: dashed;
+  justify-content: space-around;
+  border-top: 1px solid var(--light--purple--gray);
 }
 
 .info-footer ul {
@@ -112,17 +112,17 @@
 }
 
 .info-footer p {
-  color: var(--purple);
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
+  color: var(--purple);
 }
 
 .links-footer {
   display: flex;
   cursor: pointer;
-  flex-direction: column;
-  color: var(--dark--purple-gray);
   padding-bottom: 25px;
+  flex-direction: column;
+  color: var(--dark--purple--gray);
 }
 
 .links-footer a:hover {
@@ -130,10 +130,10 @@
 }
 
 .about-courses {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
 }
 
 .about-courses h3 {
@@ -170,11 +170,11 @@
 
 .card-info div {
   display: flex;
-  align-items: center;
   padding: 15px;
+  align-items: center;
 }
 
 .card-info span {
-  color: var(--dark--purple-gray);
   margin-left: 15px;
+  color: var(--dark--purple--gray);
 }

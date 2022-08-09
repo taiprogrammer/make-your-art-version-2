@@ -49,13 +49,13 @@
 
 .side-form section h2,
 .side-form section h4 {
-  color: var(--dark--purple-gray);
+  color: var(--dark--purple--gray);
 }
 
 .side-form div {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .ipt {
@@ -76,11 +76,11 @@
 
 #address .container-buttons,
 #profile-type .container-buttons {
+  width: 98%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 98%;
 }
 
 div.type-profile {
