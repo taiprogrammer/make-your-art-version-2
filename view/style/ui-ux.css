@@ -2,10 +2,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+body {
+  position: relative;
+}
+
+.overlay {
+  top: 0;
+  width: 100%;
+  height: 975px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  left: 10%;
+  top: 15px;
+  width: 80%;
+  z-index: 2;
+  height: 60%;
+  position: absolute;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 0px 5px 60px -3px rgba(0, 0, 0, 0.9);
+}
+
+.modal-header {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.modal-header img:hover {
+  opacity: 0.9;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.body-side-image img {
+  width: 600px;
+  margin: 0 15px;
+}
+
 .filter-container {
   display: flex;
   cursor: pointer;
-  margin-top: 85px;
+  margin-top: 68px;
   margin-bottom: 25px;
   flex-direction: row;
   align-items: center;
@@ -13,6 +58,7 @@
 }
 
 .filter {
+  margin: 10px 0;
   padding: 10px 30px;
   border-radius: 15px;
   background: var(--medium--rose);
@@ -44,5 +90,10 @@
 .item img {
   width: 300px;
   height: 200px;
+  cursor: pointer;
   object-fit: cover;
+}
+
+.item img:hover {
+  opacity: 0.8;
 }
