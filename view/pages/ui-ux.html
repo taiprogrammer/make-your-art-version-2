@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="../style/normalize.css" />
   </head>
   <body>
-    <div id="modal" class="overlay" style="display: none">
+    <div
+      id="modal"
+      class="overlay"
+      style="display: none"
+      onclick="closeModal()"
+    >
       <section class="modal" id="content_one">
-        <!-- style="display: none" -->
         <div class="modal-header">
           <img
             onclick="closeModal()"
@@ -23,7 +27,6 @@
         <div class="modal-body">
           <div class="body-side-image">
             <img id="modalImage" />
-            <!-- src="../assets/img/ui-art-two.webp"  -->
           </div>
           <div class="body-side-info">
             <div class="artist">

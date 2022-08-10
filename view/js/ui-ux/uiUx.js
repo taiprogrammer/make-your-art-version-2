@@ -3,6 +3,11 @@ function openModal(n) {
 
   let modalImage = document.getElementById("modalImage");
 
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+
   modal.style.display = "block";
 
   modalImage.src = `../assets/img/ui-ux/ui-art-${n}.webp`;
