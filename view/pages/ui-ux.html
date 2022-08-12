@@ -10,12 +10,7 @@
     <link rel="stylesheet" href="../style/normalize.css" />
   </head>
   <body>
-    <div
-      id="modal"
-      class="overlay"
-      style="display: none"
-      onclick="closeModal()"
-    >
+    <div id="modal" class="overlay" style="display: none">
       <section class="modal" id="content_one">
         <div class="modal-header">
           <img
@@ -30,8 +25,27 @@
           </div>
           <div class="body-side-info">
             <div class="artist">
-              <img src="" alt="" />
+              <img src="../assets/img/profile/jane.jpg" alt="Jane Hoppins" />
               <span>Jane Hoppins</span>
+            </div>
+            <div class="title-likes"><h4>Last likes</h4></div>
+            <div class="last-likes">
+              <div class="like">
+                <img src="../assets/img/profile/mike.jpg" alt="Mike Jane" />
+                <span>Mike Jane</span>
+              </div>
+              <div class="like">
+                <img src="../assets/img/profile/mike.jpg" alt="Mike Jane" />
+                <span>Mike Jane</span>
+              </div>
+            </div>
+            <div class="give-like">
+              <img
+                id="like"
+                src="../assets/icons/ic-heart-empty.svg"
+                alt="Icon heart like"
+                onclick="like()"
+              />
             </div>
           </div>
         </div>
