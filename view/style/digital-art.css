@@ -32,3 +32,146 @@
 .chosen a {
   color: var(--purple);
 }
+
+.arts {
+  width: 92%;
+  display: grid;
+  grid-gap: 10px;
+  margin: 35px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item img:hover {
+  opacity: 0.8;
+}
+
+.overlay {
+  top: 68px;
+  width: 100%;
+  height: 975px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  left: 10%;
+  top: 15px;
+  width: 80%;
+  z-index: 2;
+  height: 50%;
+  position: absolute;
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: 0px 5px 60px -3px rgba(0, 0, 0, 0.9);
+}
+
+.modal-header {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.modal-header img:hover {
+  opacity: 0.9;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.body-side-image img {
+  width: 650px;
+  height: 400px;
+  margin: 0 15px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.body-side-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.artist img {
+  width: 75px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.title-likes h4 {
+  color: var(--dark--purple--gray);
+}
+
+.like img {
+  width: 38px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.artist {
+  width: 90%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--light--purple--gray);
+}
+
+.artist,
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.like {
+  margin-bottom: 20px;
+}
+
+.last-likes {
+  display: flex;
+  margin: 50px 25px;
+  flex-direction: column;
+}
+
+.artist span,
+.like span {
+  margin-left: 25px;
+}
+
+.give-like img {
+  cursor: pointer;
+}
+
+.give-like img:hover {
+  opacity: 0.8;
+}
+
+@media (min-width: 1920px) {
+  .overlay {
+    top: 68px;
+  }
+
+  .modal {
+    height: 70%;
+  }
+
+  .modal-body {
+    height: 85%;
+  }
+
+  .body-side-image img {
+    width: 850px;
+    height: 600px;
+  }
+}

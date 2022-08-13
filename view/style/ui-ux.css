@@ -47,6 +47,7 @@ body {
   height: 400px;
   margin: 0 15px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .filter-container {
@@ -94,6 +95,7 @@ body {
   height: 200px;
   cursor: pointer;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .item img:hover {
@@ -110,7 +112,7 @@ body {
   width: 75px;
   height: 70px;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 100%;
 }
 
 .title-likes h4 {
@@ -158,4 +160,19 @@ body {
 
 .give-like img:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 1920px) {
+  .modal {
+    height: 70%;
+  }
+
+  .modal-body {
+    height: 85%;
+  }
+
+  .body-side-image img {
+    width: 850px;
+    height: 600px;
+  }
 }
