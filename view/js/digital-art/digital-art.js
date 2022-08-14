@@ -31,3 +31,26 @@ function like() {
     iconLike.src = "../assets/icons/ic-heart-empty.svg";
   }
 }
+
+let comments = ["Nice work"];
+function addComment() {
+  let comment = document.getElementById("comment-content").value;
+
+  comments.push(comment);
+  renderComments();
+}
+
+renderComments();
+
+function renderComments() {
+  let elementToRender = document.getElementById("comments");
+  for (let index = 0; index < comments.length; index++) {
+    elementToRender.innerHTML += `
+        <div class="comment">
+                    <img src="../assets/img/profile/mike.jpg" />
+                    <span>${comments[index]}</span>
+                  </div>
+        `;
+  }
+  //   elementToRender.innerHTML = "";
+}
