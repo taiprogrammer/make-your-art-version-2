@@ -89,12 +89,20 @@
   grid-template-columns: 2fr 1fr;
 }
 
+.body-side-image {
+  position: relative;
+  height: 100%;
+}
+
 .body-side-image img {
+  top: 0;
+  left: 0;
   width: 650px;
   height: 400px;
-  margin: 0 15px;
   object-fit: cover;
-  border-radius: 4px;
+  position: absolute;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .body-side-info {
@@ -121,8 +129,11 @@
   border-radius: 100%;
 }
 
-.artist {
+.pub-info {
   width: 90%;
+}
+
+.artist {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--light--purple--gray);
 }
@@ -138,15 +149,41 @@
   margin-bottom: 20px;
 }
 
-.last-likes {
+.description {
+  color: var(--light--purple--gray);
+}
+
+.comment-container {
   display: flex;
-  margin: 50px 25px;
-  flex-direction: column;
+  padding: 5px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-container input {
+  border: none;
+  outline: none;
+  font-size: 12.5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 250px;
+  background: var(--card--background);
+}
+
+.comment-container img {
+  height: 24px;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
 .artist span,
 .like span {
   margin-left: 25px;
+}
+
+.give-like {
+  display: flex;
+  align-items: center;
 }
 
 .give-like img {
@@ -157,13 +194,33 @@
   opacity: 0.8;
 }
 
+.comment {
+  display: flex;
+  margin-top: 50px;
+  max-height: 70%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.comment span {
+  margin-left: 20px;
+  color: var(--dark--purple--gray);
+}
+
+.comment img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
 @media (min-width: 1920px) {
   .overlay {
     top: 68px;
   }
 
   .modal {
-    height: 70%;
+    height: 72%;
   }
 
   .modal-body {

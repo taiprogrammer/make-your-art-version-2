@@ -48,19 +48,25 @@
             <img id="modalImage" />
           </div>
           <div class="body-side-info">
-            <div class="artist">
-              <img src="../assets/img/profile/jane.jpg" alt="Jane Hoppins" />
-              <span>Jane Hoppins</span>
-            </div>
-            <div class="title-likes"><h4>Last likes</h4></div>
-            <div class="last-likes">
-              <div class="like">
-                <img src="../assets/img/profile/mike.jpg" alt="Mike Jane" />
-                <span>Mike Jane</span>
+            <div class="pub-info">
+              <div class="artist">
+                <img src="../assets/img/profile/jane.jpg" alt="Jane Hoppins" />
+                <div>
+                  <span>Jane Hoppins</span>
+                  <a href="#">Follow</a>
+                </div>
               </div>
-              <div class="like">
-                <img src="../assets/img/profile/mike.jpg" alt="Mike Jane" />
-                <span>Mike Jane</span>
+              <div class="info-art">
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos distinctio molestiae, provident temporibus
+                    voluptatibus blanditiis asperiores id aut sed reprehenderit
+                    qui! Cumque, est? Quaerat amet ut accusantium vero
+                    perferendis dolorum.
+                  </p>
+                </div>
+                <div class="comments" id="comments"></div>
               </div>
             </div>
             <div class="give-like">
@@ -70,6 +76,14 @@
                 alt="Icon heart like"
                 onclick="like()"
               />
+              <div class="comment-container">
+                <input
+                  type="text"
+                  placeholder="Add a comment"
+                  id="comment-content"
+                />
+                <img src="../assets/icons/ic-send.svg" onclick="addComment()" />
+              </div>
             </div>
           </div>
         </div>
